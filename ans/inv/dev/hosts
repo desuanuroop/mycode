@@ -1,0 +1,4 @@
+[research]
+h1    ansible_host=10.10.2.5 ansible_user=zoidberg ansible_python_interpreter=/usr/bin/python3
+h2    ansible_host=10.10.2.4 ansible_user=fry      ansible_python_interpreter=/usr/bin/python3
+
