@@ -1,0 +1,10 @@
+---
+- name: Pinging at Ipaddress
+  hosts: planetexpress
+  gather_facts: no
+  connection: local
+
+  tasks:
+          - name: Test reachability to "{{ ansible_host }}" using default vrf
+            shell: ping -c 1 -w 2 "{{ ansible_host }}"
+            ignore_errors: true
