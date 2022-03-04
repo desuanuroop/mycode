@@ -1,0 +1,10 @@
+---
+# tasks file for create_firewall_rules
+- name: Molecule Hello World!
+  debug:
+          msg: Hello, World!
+
+- name: Create the configuration file
+  copy:
+          content: "Body of configuration file"
+          dest: ~/important.cfg

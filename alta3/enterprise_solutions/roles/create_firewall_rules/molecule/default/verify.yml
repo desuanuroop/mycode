@@ -1,0 +1,21 @@
+---
+# This is an example playbook to execute Ansible tests.
+
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: Example assertion
+    assert:
+      that: true
+
+  - name: ensure the file exists
+    ansible.builtin.stat:
+        path: ~/important.cfg
+    register: results
+
+  # Review how to use the assert module
+  # https://docs.ansible.com/ansible/latest/modules/assert_module.html
+  - name: Perform an assertion test. This will fail if the config file does not exist
+    assert:
+        that: results.stat.exists == true
