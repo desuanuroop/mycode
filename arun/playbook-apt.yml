@@ -1,0 +1,11 @@
+- name: just a simple playbook
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  become: true
+
+  tasks:
+
+  - apt:
+      name: sl
+

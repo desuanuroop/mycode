@@ -1,0 +1,4 @@
+[1;35m[WARNING]: No inventory was parsed, only implicit localhost is available[0m
+[0;32mlocalhost | SUCCESS => {[0m
+[0;32m    "msg": "hello"[0m
+[0;32m}[0m
